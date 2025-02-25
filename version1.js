@@ -21,7 +21,7 @@ function extractDatesAndAddToCalendar() {
     if (isRelevant) {
       var summary = getSummaryFromHuggingFace(fullThreadText, apiToken);
       var nerResults = getNERFromHuggingFace(fullThreadText, apiToken);
-      var deadlineClues = ["due", "deadline"];
+      var deadlineClues = ["due", "deadline","submit by","by"];
       var eventDate = null;
       var eventTime = null;
       
